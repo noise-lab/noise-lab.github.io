@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <title>Activity Recognition</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="nav-placeholder"> </div>
+
+  <script>
+  $.get("./navbar.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            });
+  </script>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h2 class="mt-4 mb-3"> Activity Recognition from Network Traffic</h2>
+
+    <p>
+    Our research group discovered that data transmitted by smart home devices
+    could reveal important information about the location and activities of
+    users. Our work has shed light on the security and privacy risks of
+    unencrypted traffic from smart home IoT devices, which ultimately led to
+    the development of secure, encrypted transport from smart home devices.
+    </p>
+
+    <p>
+    Our ongoing research is exploring how the network traffic
+    transmitted from smart home IoT devices can offer <b>benefits</b> by
+    allowing privacy-preserving, non-invasive sensing and inference of human
+    activities within the home. We are currently exploring applications of
+    activity recognition to various domains in health, medicine, and education, with
+    applications to aging populations, childhoold development, and students.
+    </p>
+
+    <h4 class="mt-4 mb-3">Smart Home Activity Recognition</h4>
+    <div class="row">
+        <div class="col-lg-6">
+        <p>
+        The growing market for smart home IoT devices promises new
+        conveniences for consumers while presenting challenges for
+        preserving privacy within the home. 
+        Eavesdroppers can measure Internet
+        traffic rates from smart home devices and infer 
+        in-home behaviors. 
+        </p>
+        
+        <p>
+        In the Internet of Things lab at the Center for Data and Computing, we
+        are exploring how network traffic in connected environments correlated
+        with human behavior, and how those correlations can provide important
+        information about personal health, education, and other factors in a
+        privacy-preserving manner. The CDAC Internet of Things (IoT) Lab is a
+        resource for UChicago students and faculty to experiment with the
+        latest devices and datasets for research and applications.
+        </p>
+      </div>
+    <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="./images/iot-lab.jpg" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <h4 class="mt-4 mb-3">Automated Labeling of Human Activities</h4> <div
+        class="row"> <div class="col-lg-6"> 
+            
+        <p> 
+            In the IoT Lab, we are
+            continuously and automatically collecting traffic from IoT
+            devices, aligning this data with video captures, and annotating
+            this data with appropriate descriptors, including: the particular
+            type of device, which activity the device is performing, and
+            whether particular network patterns result from a security
+            incident, such as device compromise.  
+        </p>
+
+        <p>
+            We are inspired by the area of computer vision,
+            whose golden age was made possible by the modern proliferation of essential
+            training data, and by the centralization of training data though repositories
+            such as Image-Net and CIFAR. Our work aims to lay the first
+            steps towards replicating such success in machine learning for the Internet of
+            Things. Our initial focus is consumer IoT devices in smart homes, but 
+            we intend to generalize our approach to other IoT devices,
+            including those in industrial, enterprise, and municipal (i.e., smart cities)
+            networks. 
+        </p>
+        
+      </div>
+    <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="./images/iotlab-fridge.png" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+
+    <!-- Pub Content -->
+    <h4 class="mt-4 mb-3">Selected Publications </h4>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul>
+            <li>
+            IoT Inspector: Crowdsourcing Labeled Network Traffic from Smart Home Devices at Scale <br />
+            Danny Yuxing. Huang, Noah Apthorpe, Gunes Acar, Frank Li, and Nick Feamster. <br />
+            Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT / Ubicomp). 2020.<br />
+            </li>
+            <p />
+
+           <li>
+            Cleartext Data Transmissions in Consumer IoT Medical Devices<br />
+            Daniel Wood, Noah Apthorpe, Nick Feamster.<br /> 
+            Workshop on Internet of Things Security and Privacy (IoT S&P).  2017
+            </li>
+            <p />
+
+            <li>
+                Instrumenting Home Networks<br />
+                Ken Calvert,  W. Keith Edwards, Nick Feamster, Rebecca E. Grinter, Ye Deng, and Xuzi Zhou. <br />
+                ACM SIGCOMM Computer Communication Review 41, no. 1 (2011): 84-89.
+            </li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- Pub -->
+
+    <!-- Pub Content -->
+    <h4 class="mt-4 mb-3">Selected Media</h4>
+
+    <div class="row">
+    <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+          <a
+              href="https://www.nytimes.com/2020/01/07/opinion/location-tracking-privacy.html"><img class="img-fluid" src="images/nyt.jpg" alt=""></a>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+          <a href="https://www.sciencefriday.com/segments/smart-tv-roku-spying/"><img class="img-fluid" src="images/npr.png" alt=""></a>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+          <a href="https://www.washingtonpost.com/technology/2019/09/18/you-watch-tv-your-tv-watches-back/?noredirect=on"> <img class="img-fluid" src="images/wapo.jpg" alt=""></a>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+
+
+
+    <div class="row">
+    <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-4 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+    </div>
+    <!-- Pub -->
+
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+    <div id="footer-ph"></div>
+      <script>
+      $(function(){
+        $("#footer-ph").load("./footer.html");
+      });
+    </script>
+
+
+    <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

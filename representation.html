@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <title>Data Representation</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="nav-placeholder"> </div>
+
+  <script>
+  $.get("./navbar.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            });
+  </script>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h2 class="mt-4 mb-3"> Representing Network Data for Machine Learning Models</h2>
+
+    <p>
+    Data representation plays a critical role in the performance of novelty
+    detection methods from machine
+    learning (ML). Our research agenda is exploring how different
+    representations of network traffic can facilitate new breakthroughs in
+    statistical inference based on network traffic.
+    </p>
+
+    <p>
+    We are currently exploring several avenues and have cases released
+    software packages with the associated ongoing research:
+    <ul>
+        <li><a href="https://nprint.github.io/nprint/">nPrint</a> represents packets as standard bitmaps for use in a wide
+            range of classification problems (device identification,
+            application identification, etc.)
+        </li>
+        <li><a href="https://pypi.org/project/netml/">NetML</a> produces standard representations of packet captures as
+            multi-dimensional timeseries data with a focus on unsupervised
+            learning problems (e.g., outlier detection).
+    </p>
+    </ul>
+
+    <h4 class="mt-4 mb-3">nPrint</h4>
+    <div class="row">
+        <div class="col-lg-6">
+        <p>
+        nPrint is a standard data representation for network traffic meant
+        to be directly usable with machine learning algorithms, replacing
+        feature engineering for a wide array of traffic analysis problems. 
+        Conventional detection and classification ("fingerprinting") problems
+        involving network traffic commonly rely on either rule-based expert
+        systems or machine learning models that are trained with manually
+        engineered features derived from network traffic. Automated approaches
+        in this area are typically tailored for specific problems. This paper
+        presents nPrint, a standard, packet-based representation of network
+             traffic that can be used as an input to train a variety of
+             machine learning models without extensive feature engineering.
+             We demonstrate that nPrint offers a suitable traffic
+             representation for machine learning algorithms across three
+             common network traffic classification problems: device
+             fingerprinting, operating system fingerprinting, and application
+             identification. 
+        </p>
+
+        <p>
+        For more
+        advanced usage and details see the <a
+            href="https://nprint.github.io/nprint/">project page.</a></p>
+      </div>
+    <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="./images/nprint.png" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <h4 class="mt-4 mb-3">NetML</h4>
+    <div class="row">
+        <div class="col-lg-6">
+        <p>
+        Data representation plays a critical role in the performance of
+        novelty detection methods from machine learning. Network traffic
+        has conventionally posed many challenges to conventional anomaly
+        detection, due to the inherent diversity of network traffic. Even
+        within a single network, the most fundamental characteristics can
+        change; this variability is fundamental to network traffic but
+        especially true in the Internet of Things (IoT), where the network
+        hosts a wide array of devices, each of which behaves differently,
+        exhibiting high variance in both operational modalities and network
+        activity patterns. 
+        </p> 
+        
+        <p>
+        Although there are established ways to study the
+        effects of data representation in supervised learning, the problem is
+        particularly challenging and understudied in the unsupervised learning
+        context, where there is no standard way to evaluate the effect of
+        selected features and representations at training time. This work
+        explores different data representations for novelty detection in the
+        Internet of Things, studying the effect of different representations
+        of network traffic flows on the performance of a wide range of machine
+        learning algorithms for novelty detection for problems arising in IoT,
+        including malware detection, the detection of rogue devices, and the
+        detection of cyberphysical anomalies.
+        </p>
+
+      </div>
+    <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="./images/netml.png" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Pub Content -->
+    <h4 class="mt-4 mb-3">Selected Publications </h4>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul>
+          <li>
+              nPrint: A Standard Data Representation for Network Traffic Analysis. <br />
+              Holland, Jordan, Paul Schmitt, Nick Feamster, and Prateek Mittal.<br /> 
+              arXiv preprint arXiv:2008.02695 (2020).
+          </li>
+
+          <li>
+              A Comparative Study of Network Traffic Representations for Novelty Detection.<br />
+              Kun Yang, Samory Kpotufe, and Nick Feamster.<br /> 
+              arXiv preprint arXiv:2006.16993 (2020).
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- Pub -->
+
+    <!-- Pub Content -->
+    <h4 class="mt-4 mb-3">Software Releases</h4>
+    <div class="row">
+    <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4 text-center">
+          <a href="https://nprint.github.io/nprint/"><img class="img-fluid rounded mb-4" src="./images/github.png"></a><br />
+          <a href="https://nprint.github.io/nprint/">nPrint</a>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4 text-center">
+          <a href="https://pypi.org/project/netml/"><img class="rounded mb-4"
+              height=80 src="./images/python.png"></a><br/>
+          <a href="https://pypi.org/project/netml/">NetML</a>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+    </div>
+    <!-- Pub -->
+
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+    <div id="footer-ph"></div>
+      <script>
+      $(function(){
+        $("#footer-ph").load("./footer.html");
+      });
+    </script>
+
+
+    <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

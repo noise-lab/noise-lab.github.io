@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <title>Internet Security and Privacy</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="nav-placeholder"> </div>
+
+  <script>
+  $.get("./navbar.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            });
+  </script>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h2 class="mt-4 mb-3">Internet Security and Privacy</h2>
+
+    <p>
+    Our research group has been developing data-driven approaches to security
+    and privacy, with a focus on applying machine learning to Internet-based
+    attacks. The group has developed technology that was the basis for many
+    breakthrough innovations in Internet security and privacy, including:
+    <ul>
+        <li>the first spam filtering system based on network-level features (SNARE); </li>
+        <li>the first botnet detection startup based on DNS queries (Damballa) </li>
+        <li>the first early warning system using DNS registration information to detect early warning (Predator)</li>
+        <li>the first large-scale study of security and privacy vulnerabilities of smart home Internet of Things (IoT) devices (IoT Inspector) </li>
+    </li>
+    </ul>
+    <p>
+    Our research has resulted in transition to practice, through startup
+    companies, integration into existing products, collaborations with
+    industry through joint intellectual property agreements, and advisories to
+    regulatory and other government agencies (e.g., the Federal Trade
+    Commission).
+    </p>
+
+    <p>
+    Recently, we have been applying machine learning to detect outliers and
+    anomalies in <b>smart home Internet of Things (IoT) traffic</b>, and applying
+    machine learning to automatically learn normal (and outlier) behavior of
+    IoT traffic, with applications to smart homes, smart cities, and smart
+    infrastructure.</p> 
+    
+    <p>
+    We are also performing research in the area of <b>DNS
+    privacy</b>, designing protocols and systems to improve the privacy
+    properties of DNS.
+    </p>
+
+
+    <h4 class="mt-4 mb-3">IoT Security and Privacy</h4>
+    <div class="row">
+        <div class="col-lg-6">
+        <p>
+        The Internet Of Things (IoT) market is predicted to grow at $520B in
+        valuation by 2021, more than double the $235B spent in 2017, according
+        to Forbes. The increasing popularity of these "smart" IoT consumer
+        devices raises many interesting research questions. We have 
+        replicated a residential broadband Internet network inside an experimental
+        laboratory to study security, privacy, and network performance. By
+        hosting several IoT devices (powered by CableLabs), we provide a
+        unique opportunity for you to experiment with new and existing
+        datasets, apply data science and machine learning techniques to
+        uncover new insights and valuable information, or build your new
+        application or research project.
+        </p>
+
+        <p> The Internet of Things (IoT) lab at the Center for Data and
+        Computing at the University of Chicago is a unique resource that
+        allows us to explore the security and privacy behaviors of a wide
+        variety of devices. For example, some of our recent work has explored
+        the <a href="https://tv-watches-you.princeton.edu/">tracking behavior
+            of Smart TVs</a>.  </p>
+        </div>
+        <div class="col-lg-6">
+            <img class="img-fluid rounded mb-4" src="./images/iot-inspector.png" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+
+    <h4 class="mt-4 mb-3">DNS Privacy</h4>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>
+            DNS reveals information that an Internet user
+            may want to keep private, such as websites, 
+            user identifiers, MAC addresses, and IP subnets.
+            This information can be visible to a third party
+            or even between a recursive resolver and an
+            authoritative server. 
+            Yet, even existing solutions such as
+            DNS Query Name Minimization, DNS-over-HTTPS (DoH), and
+            DNS-over-TLS (DoT) do not completely protect
+            Specifically, prevent DNS operators from learning
+            information which domains specific users are interested in.
+            We are developing various technologies that work in conjunction
+            with encrypted DNS solutions to further protect user privacy in
+            these settings.
+            </p>
+
+            <p> 
+            <b>Distributed DNS (DDNS)</b> revisit the trend towards
+            centralized DNS and explores re-decentralizing the DNS
+            such that clients might use multiple DNS
+            resolvers when resolving domain names. We
+            propose and evaluate several candidate decentralized
+            architectures, laying the groundwork for future research to
+            explore decentralized, encrypted DNS architectures that strike a
+            balance between privacy and performance.
+            </p>
+
+            <p>
+            <b>Oblivious DNS (ODNS)</b> aims to protect user privacy against a
+            powerful adversary that has the capabilities to: 1) eavesdrop on
+            communications between clients and recursive resolvers, and
+            between recursive resolvers and authoritative name servers, 2)
+            request data (via subpoena/warrant) from any number of DNS
+            operators, 3) maliciously access data at any DNS server.  
+            </p>
+
+        </div>
+        <div class="col-lg-6 text-center">
+            <img class="img-fluid rounded mb-4" src="./images/dns-privacy.png" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+
+
+    <!-- Pub Content -->
+    <h4 class="mt-4 mb-3">Selected Publications </h4>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul>
+
+            <li>
+            IoT Inspector: Crowdsourcing Labeled Network Traffic from Smart Home Devices at Scale <br />
+            Danny Yuxing. Huang, Noah Apthorpe, Gunes Acar, Frank Li, and Nick Feamster. <br />
+            Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT / Ubicomp). 2020.<br />
+            </li>
+            <p />
+
+            <li>
+            Watching You Watch: The Tracking Ecosystem of Over-the-Top TV
+            Streaming Devices<br />
+            Hooman Mohajeri Moghaddam, Gunes Acar, Ben Burgess, Arunesh
+            Mathur, Danny Yuxing Huang, Nick Feamster, Edward W. Felten, Prateek Mittal,
+            Arvind Narayanan.<br />
+            ACM Conference on Computer and Communications Security (CCS).  2019.
+            </li>
+            <p />
+
+            <li>
+            Keeping the Smart Home Private with Smart(er) IoT Traffic Shaping<br />
+            Noah Apthorpe, Danny Yuxing Huang, Dillon Reisman, Arvind
+            Narayanan, Nick Feamster.<br />
+            Privacy Enhancing Technologies Symposium (PETS). 2019.
+            </li>
+            <p />
+
+            <li>
+            Evaluating the Contextual Integrity of Privacy Regulation: Parents' IoT Toy
+            Privacy Norms Versus COPPA<br />
+            Noah Apthorpe, Sarah Varghese, Nick Feamster.<br />
+            USENIX Security Symposium. 2019.
+            </li>
+            <p />
+
+            <li>
+            Selling a Single Item with Negative Externalities (a case for IoT regulation)<br />
+            Matheus Xavier Ferreira, Danny Yuxing Huang, Tithi Chattopadhyay, Nick Feamster, S. Matthew Weinberg.<br />
+            International World Wide Web Conference (WWW). 2019.
+            </li>
+            <p />
+
+            <li>
+            User Perceptions of Smart Home IoT Privacy<br />
+            Serena Zheng, Noah Apthorpe, Marshini Chetty, Nick Feamster.<br />
+            ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW). 2018.
+            </li>
+            <p />
+
+            <li>
+            Fast Web-based Attacks to Discover and Control IoT Devices<br />
+            Gunes Acar, Danny Y. Huang, Frank Li, Arvind Narayanan, and Nick Feamster.<br />
+            ACM SIGCOMM Workshop on IoT Security and Privacy. 2018.
+            </li>
+            <p />
+
+            <li>
+            Security and Privacy Analyses of Internet of Things Children's Toys<br />
+            Gordon Chu, Noah Apthorpe, Nick Feamster. <br />
+            IEEE Internet of Things Journal (IoT-J). 2018.
+            </li>
+            <p />
+
+            <li>
+            Machine Learning DDoS Detection for Consumer Internet of Things Devices<br />
+            Rohan Doshi, Noah Apthorpe, Nick Feamster. <br />
+            IEEE Deep Learning and Security Workshop (DLS). 2018.
+            </li>
+            <p />
+
+            <li>
+            Discovering IoT Smart Home Privacy Norms using Contextual Integrity<br />
+            Noah Apthorpe, Yan Shvartzshnaider, Arunesh Mathur, Dillon Reisman, Nick Feamster. <br />
+            ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (Ubicomp/IMWUT). 2018.
+            </li>
+            <p />
+
+            <li>
+            Cleartext Data Transmissions in Consumer IoT Medical Devices<br />
+            Daniel Wood, Noah Apthorpe, Nick Feamster.<br /> 
+            Workshop on Internet of Things Security and Privacy (IoT S&P).  2017
+            </li>
+            <p />
+
+
+            <li>
+            Closing the Blinds: Four Strategies for Protecting Smart Home Privacy from Network Observers<br />
+            Noah Apthorpe, Dillon Reisman, Nick Feamster. <br />
+            Workshop on Technology and Consumer Protection (ConPro). 2017.
+            </li>
+            <p />
+
+            <li>
+            A Smart Home is No Castle: Privacy Vulnerabilities of Encrypted IoT Traffic <br />
+            kNoah Apthorpe, Dillon Reisman, Nick Feamster. <br />
+            Data and Algorithmic Transparency Workshop (DAT). 2016.
+            </li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- Pub -->
+
+    <!-- Pub Content -->
+    <h4 class="mt-4 mb-3">Selected Media</h4>
+    <div class="row">
+    <div class="col-lg-2 col-sm-4 mb-4">
+          <a href="https://www.washingtonpost.com/technology/2019/09/18/you-watch-tv-your-tv-watches-back/?noredirect=on">
+              <img class="img-fluid" src="images/wapo.jpg" alt=""></a>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+          <a
+              href="https://www.nytimes.com/2020/01/07/opinion/location-tracking-privacy.html"><img class="img-fluid" src="images/nyt.jpg" alt=""></a>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+          <a
+              href="https://blogs.wsj.com/cio/2016/10/31/algorithm-red-flags-potentially-dangerous-domain-names-at-time-of-purchase/"><img class="img-fluid" src="images/wsj.png" alt=""></a>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+          <a
+              href="https://www.technologyreview.com/2009/07/29/211312/a-better-way-to-shoot-down-spam/"><img class="img-fluid" src="images/tr.png" alt=""></a>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+          <a
+              href="https://www.sciencefriday.com/segments/smart-tv-roku-spying/"><img class="img-fluid" src="images/npr.png" alt=""></a>
+      </div>
+    </div>
+    <!-- Pub -->
+
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+    <div id="footer-ph"></div>
+      <script>
+      $(function(){
+        $("#footer-ph").load("./footer.html");
+      });
+    </script>
+
+
+    <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

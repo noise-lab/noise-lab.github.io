@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <title>Network Performance Inference</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="nav-placeholder"> </div>
+
+  <script>
+  $.get("./navbar.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            });
+  </script>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h2 class="mt-4 mb-3"> Measuring and Inferring Network Performance </h2>
+
+    <p>
+    Our research group has been developing technologies to monitor and measure
+    the performance of access networks for nearly two decades. Past work
+    involved developing one of the first router-based Internet "speed
+    tests", the design of which ultimately formed the basis of the speed
+    tests used in the Federal Communications Commission's "Measuring
+    Broadband America" program.
+    </p>
+
+    <p>
+    More recently, we have developed technology to automatically infer
+    application performance from encrypted traffic, in a system called Net
+    Microscope. This technology was the basis for a multi-year investigative
+    study with <i>The Wall Street Journal</i> on the relationships between
+    speed and application performance.
+    </p>
+
+    <h4 class="mt-4 mb-3"> Application Performance Inference</h4>
+    <div class="row">
+        <div class="col-lg-6">
+        <p>
+        Video streaming comprises more than 75 percent of today's Internet
+        traffic.  Accurately measuring the quality of experience of such
+        service, both in broadband and cellular networks, is paramount.  Such
+        measurement helps ISPs detect performance issues, preferably before
+        customers make calls about degraded service. This allows ISPs to take
+        proactive actions that can improve service performance, such as
+        re-routing a stream over a less congested path.
+        </p>
+
+        <p>
+        Yet, inferring the quality of an application's service on a network is
+        challenging. This requires both domain expertise in networking, deep
+        understanding of the target application, and systems/DevOps
+        capabilities.  Meanwhile, ISPs are spending a massive amount of money
+        on running customer call centers without good answers to provide: not
+        because the lack data but because the lack of an efficient and accurate
+        video QoE monitoring solution.
+        </p>
+
+        <p>
+        <b>Network Microscope</b> is a system that accurately infers video streaming quality metrics in
+        real time, such as startup delay or video resolution, by using just a
+        handful of features extracted from passive traffic measurement. Network
+        Microscope passively collects a corpus of network features about the
+        traffic flows of interest in the network and directs those to a
+        real-time analytics framework that can perform more complex inference
+        tasks. Network Microscope enables network operators to determine
+        degradations in application quality as they happen, even when the
+        traffic is encrypted. 
+        </p>
+      </div>
+        <div class="col-lg-6">
+            <img class="img-fluid rounded mb-4" src="./images/netmicro.jpg" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <h4 class="mt-4 mb-3"> Access Network Performance Measurement</h4>
+    <div class="row">
+        <div class="col-lg-6">
+        <p> 
+            BISmark is the Broadband Internet Service Benchmark. It is a
+            project initiated at Prof. Feamster's research group at Georgia
+            Tech in 2010. It is now led by <a
+                href="https://noise.cs.uchicago.edu/">University of
+                Chicago</a>.  The project initially developed an OpenWRT-based
+            platform for performing measurements of
+            ISP performance, as well as traffic inside the home. BISmark can
+            measure ISP performance, visualize and monitor traffic
+            patterns from users and devices inside ia home network, and
+            perform other network management tasks, such as managing usage
+            caps.
+        </p>
+        <p>
+            The initial BISmark deployment spanned 400 home networks in 30
+            countries and resulted in nearly 20 peer-reviewed academic
+            conference publications. The project also had a dashboard to allow
+            users to monitor the performance of their home network over time. 
+            The source code is 
+            <a href="https://github.com/projectbismark/">available on Github</a>,
+            and all of the performance measurements are also publicly
+            available. The BISmark performance measurements are now integrated
+            into current deployments ot NetMicroscope.
+        </p>
+      </div>
+        <div class="col-lg-6">
+            <img class="img-fluid rounded mb-4" src="./images/netdash.png" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+
+    <!-- Pub Content -->
+    <h4 class="mt-4 mb-3">Selected Publications </h4>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul>
+
+          <li>
+              Inferring Streaming Video Quality from Encrypted Traffic:
+              Practical Models and Deployment Experience<br />
+              F. Bronzino, P. Schmitt, S.Ayoubi, G. Martins, R. Teixeira, N.
+              Feamster<br />
+          <em>ACM Conference on Measurement and Analysis of Computing
+              Systems (POMACS)</em> and <em>ACM SIGMETRICS</em>. 2020.
+          </li>
+
+            <p />
+            <li>
+            Broadband Internet Performance: A View from the Gateway. <br />
+            Srikanth Sundaresan , Walter De Donato, Nick Feamster, Renata Teixeira, Sam Crawford, and Antonio Pescapè.<br /> 
+            ACM SIGCOMM 2011
+            </li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- Pub -->
+
+    <!-- Pub Content -->
+    <h4 class="mt-4 mb-3">Selected Media</h4>
+    <div class="row">
+    <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-4 col-sm-4 mb-4">
+          <a href="https://www.wsj.com/graphics/faster-internet-not-worth-it/"><img class="img-fluid" src="images/wsj.png" alt=""></a>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+    </div>
+    <!-- Pub -->
+
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+    <div id="footer-ph"></div>
+      <script>
+      $(function(){
+        $("#footer-ph").load("./footer.html");
+      });
+    </script>
+
+
+    <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

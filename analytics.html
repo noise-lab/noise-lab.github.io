@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <title>Operational Analytics</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="nav-placeholder"> </div>
+
+  <script>
+  $.get("./navbar.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            });
+  </script>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h2 class="mt-4 mb-3"> Operational Analytics</h2>
+
+    <p>
+    Machine learning has been applied to many network operations problems,
+    from detecting network infections to inferring the quality of application
+    traffic. In most cases, however, the models developed in the research lab
+    cannot be transitioned to practice: they operate in offline settings with
+    limited datasets, ignoring challenging problems from model efficiency
+    and retraining to obtaining ground truth at scale. 
+    </p>
+    
+    <p>
+    Our research agenda considers a new direction: operationalizing
+    network analytics. We describe some of the
+    shortcomings of existing applications of machine learning in network
+    operations in the context of broadband access networks and cellular
+    networks and explain how more fundamental research at the intersection
+    between networking, systems, and machine learning can help develop more
+    effective solutions for managing today’s networks.
+    </p>
+
+    <h4 class="mt-4 mb-3">Sonata: Query-Driven Network Telemetry</h4>
+    <div class="row">
+        <div class="col-lg-6">
+        <p> Sonata is a query-driven streaming network telemetry system that uses a
+            declarative query interface to drive the joint collection and analysis of
+            network traffic. It takes advantage of two emerging
+            technologies---streaming analytics platforms and programmable
+            network devices---to facilitate query-driven telemetry.
+    </p>
+
+    <p> 
+    Sonata allows operators to directly express queries for a range of network
+    telemetry applications using a high level declarative language. Under the
+    hood, Sonata partitions each query into a portion that runs in the switch
+    and another that runs on the streaming analytics platform, iteratively
+    refines the queries to efficiently capture only the traffic that satisfies
+    the respective queries.  
+    </p>
+
+      </div>
+    <div class="col-lg-6 text-center">
+        <img class="img-fluid rounded mb-4" src="./images/sonata.png" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+
+<h4 class="mt-4 mb-3">Software-Defined Internet Exchange Point (SDX)</h4>
+    <div class="row">
+        <div class="col-lg-6">
+        <p> 
+        Software Defined IXP (SDX) brings the merits of Software
+        Defined Networking (SDN) to interdomain routing. Today's intedomain
+        routing protocol, Border Gateway Protocol (BGP) constrains how
+        networks can deliver traffic over the Internet. Today's networks can
+        only forward traffic based on the destination IP prefixes, by
+        selecting among the routes offered by their immediate neighbors. SDN
+        can offer direct control over packet-processing rules that match on
+        multiple header fields and perform a variety of actions. IXPs are a
+        compelling place to deploy these changes, given their role in
+        interconnecting many networks and their growing importance in bringing
+        popular content closer to end users.
+        </p>
+
+        <p>
+        SDX does more than simply replace an IXP's switches with their
+        OpenFlow counterparts. SDX's capabilities enable new applications,
+        such as application-specific peering---where two networks peer only
+        for (say) streaming video traffic. We also developed new programming
+        abstractions that allow participating networks to create and run these
+        applications and a runtime that both behaves correctly when
+        interacting with BGP and ensures that applications do not interfere
+        with each other. Finally, we also ensured that the system scales, both
+        in terms of table size and computational overhead.
+        Our SDX controller has been deployed at various IXPs around the world.
+        </p>
+
+    <p> 
+    </p>
+
+      </div>
+    <div class="col-lg-6 text-center">
+        <img class="img-fluid rounded mb-4" src="./images/isdx.png" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+
+
+
+    <!-- Pub Content -->
+    <h4 class="mt-4 mb-3">Selected Publications </h4>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul>
+       <li>
+                <a
+                        href="http://www.cs.ucsb.edu/~arpitgupta/pdfs/sonata.pdf">Sonata: Query-Driven Network Telemetry</a><br />
+                Arpit Gupta, Rob Harrison, Marco Canini, Nick Feamster, Jennifer Rexford, Walter Willinger<br />
+                <em>ACM SIGCOMM, </em> Budapest, Hungary. August 2018</em>.
+            </li>
+          <p />
+
+            <li>
+                <a
+                        href="http://www.cs.ucsb.edu/~arpitgupta/pdfs/sonata-hotnets16.pdf">Network Monitoring as a Streaming Analytics Problem </a><br />
+                Arpit Gupta, R&uuml;diger Birkner, Marco Canini, Nick Feamster, Chris Mac-Stoker, Walter Willinger<br />
+                <em>ACM HotNets, </em> Atlanta, GA. November 2016</em>.
+            </li>
+          <p />
+
+ <li>
+            <a href="http://www.cs.princeton.edu/~arpitg/pdfs/isdx.pdf">
+            iSDX: An Industrial-Scale Software Defined Internet Exchange Point</a><br />
+            Arpit Gupta, Robert MacDavid, R&uuml;diger Birkner, Marco Canini, Nick Feamster, Jennifer Rexford, Laurent Vanbever<br/>
+            <em>USENIX NSDI</em>, Santa Clara, CA. March 2016.
+          </li>
+          <p />
+
+          <li>
+            <a href="http://gtnoise.net/papers/2014/gupta-sigcomm2014.pdf">
+              SDX: A Software Defined Internet Exchange</a><br />
+              Arpit Gupta, Laurent Vanbever, Muhammad Shahbaz, Sean P.  Donovan, Brandon Schlinker, Nick Feamster, Jennifer Rexford, Scott Shenker, Russ Clark, Ethan Katz-Bassett<br/>
+              <em>ACM SIGCOMM</em>, Chicago, IL. August 2014.
+          </li>
+          <p />
+
+
+        </ul>
+      </div>
+    </div>
+    <!-- Pub -->
+
+    <!-- Pub Content -->
+    <h4 class="mt-4 mb-3">Software Releases</h4>
+    <div class="row">
+    <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4 text-center">
+          <a href="https://github.com/sdn-ixp"><img class="img-fluid rounded mb-4" src="./images/github.png"></a><br />
+          <a href="https://github.com/sdn-ixp">SDX</a>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4 text-center">
+          <a href="https://github.com/Sonata-Princeton/SONATA-DEV"><img class="rounded mb-4" height=80 src="./images/github.png"></a><br/>
+          <a href="https://github.com/Sonata-Princeton/SONATA-DEV">Sonata</a>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+      </div>
+    </div>
+    <!-- Pub -->
+
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+    <div id="footer-ph"></div>
+      <script>
+      $(function(){
+        $("#footer-ph").load("./footer.html");
+      });
+    </script>
+
+
+    <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
