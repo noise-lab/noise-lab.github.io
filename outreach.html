@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <title>Outreach</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="nav-placeholder"> </div>
+
+  <script>
+  $.get("./navbar.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+            });
+  </script>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h2 class="mt-4 mb-3">Outreach and Impact</h2>
+
+    <p>
+    An important part of our research group's activity is outreach, through
+    education, policy, transition to practice through open-source software
+    packaages, and other activities. The <a href="https://medium.com/noise-lab">lab news</a> has a 
+    section with <a href="https://medium.com/noise-lab/tagged/outreach/">
+        information on the latest lab outreach activities</a>.
+    </p>
+
+
+    <h4 class="mt-4 mb-3">Education</h4>
+    <div class="row">
+        <div class="col-lg-6">
+        <p>
+        The lab participates in various educational activities, with a focus
+        on outreach to under-represented high-school students and
+        undergraduates. Ongoing activities include:
+        <ul>
+            <li>Mentorship in the Center for Data and Computing Summer Lab
+                program.</li>
+            <li>Summer courses on machine learning and network security to
+                under-represented students in the Chicago Public School
+                system, through the University of Chicago Outward Bound program.</li>
+            <li>Massive Open Online Courses, including Coursera courses on
+                Software Defined Networking and Applications of Machine
+                Learning.</li>
+            <li>Continuing education courses through the University of Chicago
+                Office of Professional Education in the areas of machine
+                learning and cybersecurity.</li>
+        </ul>
+        </p>
+        <p>
+        The research group also works with undergraduate researchers from the University of Chicago throughout the year.
+         </p>
+        </div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4">
+            <img class="img-fluid rounded mb-4" src="./images/iot-unboxing.jpg" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <h4 class="mt-4 mb-3">Policy</h4>
+    <div class="row">
+        <div class="col-lg-6">
+        <p>
+        Much of the lab's research has implication for local, state, and
+        national policy.  Professor Feamster and other members of the lab
+        actively participate in various outreach activities, including:
+        <ul>
+            <li>Participation in the Broadband Internet Technical Advisory
+                Group (BITAG), which writes technical documents for
+                policymakers in Washington, D.C. The group has presented to
+                influential policymakers, including commissioners at the
+                Federal Communications Commission (FCC) and the Federal Trade
+                Commission (FCC).</li>
+            <li>Authoring of comments, including comments to the FCC, FTC, and
+                US Patent and Trademark Office on topics
+                pertaining to wireless spectrum allocation, network privacy,
+                open-source router software, collection of data for research
+                purposes, and intellectual property concerns of creative works
+                generated from machine learning models.</li>
+            <li>Regular presentation at tech policy conferences in Washington D.C.,
+                including FTC PrivacyCon and State of the Net.</li>
+        </ul>
+
+         </p>
+        </div>
+        <div class="col-lg-6">
+            <img class="img-fluid rounded mb-4" src="./images/rosenworcel.png" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+    <div id="footer-ph"></div>
+      <script>
+      $(function(){
+        $("#footer-ph").load("./footer.html");
+      });
+    </script>
+
+
+    <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
