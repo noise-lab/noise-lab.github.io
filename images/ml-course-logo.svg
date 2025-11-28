@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <defs>
+    <linearGradient id="mlcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E53E3E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C53030;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="200" height="150" fill="#f8f9fa"/>
+
+  <!-- Brain outline -->
+  <ellipse cx="100" cy="60" rx="45" ry="40" fill="none" stroke="url(#mlcGrad)" stroke-width="3"/>
+
+  <!-- Brain folds -->
+  <path d="M 70 45 Q 85 35 100 45 Q 115 35 130 45" fill="none" stroke="url(#mlcGrad)" stroke-width="2"/>
+  <path d="M 65 60 Q 80 50 95 60 Q 110 50 135 60" fill="none" stroke="url(#mlcGrad)" stroke-width="2"/>
+  <path d="M 70 75 Q 85 65 100 75 Q 115 65 130 75" fill="none" stroke="url(#mlcGrad)" stroke-width="2"/>
+
+  <!-- Neural sparkles -->
+  <circle cx="80" cy="50" r="3" fill="#E53E3E"/>
+  <circle cx="120" cy="55" r="3" fill="#E53E3E"/>
+  <circle cx="95" cy="70" r="3" fill="#E53E3E"/>
+  <circle cx="110" cy="45" r="3" fill="#E53E3E"/>
+
+  <!-- Connections -->
+  <g stroke="#E53E3E" stroke-width="1" opacity="0.5">
+    <line x1="80" y1="50" x2="120" y2="55"/>
+    <line x1="120" y1="55" x2="95" y2="70"/>
+    <line x1="95" y1="70" x2="110" y2="45"/>
+    <line x1="110" y1="45" x2="80" y2="50"/>
+  </g>
+
+  <!-- Label -->
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="10" fill="#2D3748" text-anchor="middle">Machine Learning</text>
+</svg>
