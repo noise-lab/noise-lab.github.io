@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Internet of Things (IoT) Lab at the University of Chicago">
+	<meta name="author" content="">
+
+	<title>NOISE Lab - IoT Lab</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<!-- Navigation -->
+	<div id="nav-placeholder"></div>
+	<script>
+		$.get("./navbar.html", function(data){
+			$("#nav-placeholder").replaceWith(data);
+		});
+	</script>
+
+	<!-- Banner Image -->
+	<div class="container-fluid p-0">
+		<img src="images/iot-lab-banner.jpg" alt="IoT Lab Banner" class="img-fluid w-100" style="max-height: 280px; object-fit: cover;">
+	</div>
+
+	<div class="container mt-4">
+
+		<h2>Internet of Things (IoT) Lab</h2>
+
+		<div class="row mb-4">
+			<div class="col-md-8">
+				<p>The IoT Lab serves as a resource for UChicago students and faculty to experiment with cutting-edge devices and datasets for research and applications.</p>
+
+				<p>The lab studies security, privacy, and network performance by replicating home broadband networks in a laboratory setting. It hosts several IoT devices powered by CableLabs with an isolated, dedicated Comcast internet connection.</p>
+
+				<h4 class="mt-4">Research Questions</h4>
+				<ul>
+					<li>"Am I getting what I paid for from my internet subscription?"</li>
+					<li>"What happens when one of your home connected devices is compromised?"</li>
+					<li>"What exactly happens when you play your favorite Netflix video?"</li>
+					<li>"How can we watch the watchers?"</li>
+				</ul>
+
+				<h4 class="mt-4">Available Devices</h4>
+				<ul>
+					<li>Bose SoundTouch 30</li>
+					<li>Google Home</li>
+					<li>Amazon Alexa</li>
+					<li>Jetson Nano Single Board Computer</li>
+					<li>Google Coral Single Board Computer</li>
+					<li>Raspberry Pi4</li>
+					<li>Intel Neural Compute USB Stick2</li>
+					<li>Google Coral USB Accelerator</li>
+					<li>Samsung Fridge</li>
+					<li>Samsung SmartThings (Hub and Sensors)</li>
+					<li>Phillips Hue (Hub and Sensors)</li>
+				</ul>
+
+				<h4 class="mt-4">Media Coverage</h4>
+				<p>Research findings from the IoT Lab have been featured in NPR, Wall Street Journal, New York Times, and Washington Post.</p>
+
+				<h4 class="mt-4">Contact</h4>
+				<p><strong>Guilherme Martins</strong>: gmartins@uchicago.edu</p>
+			</div>
+			<div class="col-md-4">
+				<img src="images/iot-lab-main.jpg" alt="IoT Lab" class="img-fluid rounded">
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Footer -->
+	<div id="footer-ph"></div>
+	<script>
+		$(function(){
+			$("#footer-ph").load("./footer.html");
+		});
+	</script>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
