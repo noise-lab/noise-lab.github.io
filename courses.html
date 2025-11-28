@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>NOISE Lab - Courses</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<!-- Navigation -->
+	<div id="nav-placeholder"></div>
+	<script>
+		$.get("./navbar.html", function(data){
+			$("#nav-placeholder").replaceWith(data);
+		});
+	</script>
+
+	<div class="container mt-4">
+
+		<h2>Courses</h2>
+
+		<p>Professor Feamster regularly teaches courses on computer networking, security, and machine learning to a variety of audiences, including undergraduate and graduate students, as well as online learners worldwide.</p>
+
+		<hr>
+
+		<h4>Core Courses</h4>
+
+		<div class="row mb-4">
+			<div class="col-md-4">
+				<h5><a href="https://github.com/noise-lab/ml-systems/">Machine Learning for Computer Systems</a></h5>
+				<p>Applications of machine learning to network security, performance, and operations. Covers traffic classification, anomaly detection, and predictive modeling for networked systems.</p>
+			</div>
+			<div class="col-md-4">
+				<h5><a href="https://github.com/noise-lab/censorship-course/">Internet Censorship and Online Speech</a></h5>
+				<p>Technical and policy aspects of Internet censorship worldwide. Covers measurement techniques, circumvention tools, and the interplay between technology and free expression.</p>
+			</div>
+			<div class="col-md-4">
+				<h5><a href="https://github.com/noise-lab/security-course">Security, Privacy, and Consumer Protection</a></h5>
+				<p>Security and privacy challenges in consumer technologies. Covers smart home devices, web tracking, and techniques for protecting user privacy.</p>
+			</div>
+		</div>
+
+		<hr>
+
+		<h4>Online Courses</h4>
+
+		<div class="row mb-4">
+			<div class="col-md-4">
+				<h5><a href="https://www.coursera.org/learn/sdn/home/welcome">Software Defined Networking</a></h5>
+				<p>Coursera MOOC covering the principles and practice of SDN, including OpenFlow, network virtualization, and programming network control planes.</p>
+			</div>
+			<div class="col-md-4">
+				<h5><a href="https://www.coursera.org/learn/machine-learning-applications/">Machine Learning Concepts and Applications</a></h5>
+				<p>Coursera MOOC introducing machine learning fundamentals with practical applications across various domains.</p>
+			</div>
+			<div class="col-md-4">
+				<h5><a href="http://www.omscs.gatech.edu/cs-6250-computer-networks">Computer Networking (Georgia Tech OMSCS)</a></h5>
+				<p>Graduate-level computer networking course for Georgia Tech's Online Masters in Computer Science program.</p>
+			</div>
+		</div>
+
+		<hr>
+
+		<h4>YouTube Playlists</h4>
+
+		<p>Free instructional video playlists are available on the <a href="https://youtube.com/c/nfeamster">nfeamster YouTube channel</a>:</p>
+
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=8CP4S1AmrqE&list=PLpherdrLyny-zJw95jcE-uJkcsIAG1MEn">Computer Networking Course</a></li>
+			<li><a href="https://www.youtube.com/watch?v=8CP4S1AmrqE&list=PLpherdrLyny-zJw95jcE-uJkcsIAG1MEn">Internet Censorship and Online Speech Course</a></li>
+			<li><a href="https://www.youtube.com/watch?v=dkUDUb9GtH0&list=PLpherdrLyny8YN4M24iRJBMCXkLcGbmhY">Software Defined Networking Course</a></li>
+		</ul>
+
+		<hr>
+
+		<h4>Textbooks</h4>
+
+		<ul>
+			<li><a href="https://computernetworksbook.com/">Computer Networks</a> (6th edition, 2020) - with Andrew Tanenbaum</li>
+			<li>Machine Learning for Computer Networks (in progress)</li>
+			<li>Internet Censorship and Online Speech (in progress)</li>
+		</ul>
+
+	</div>
+
+	<!-- Footer -->
+	<div id="footer-ph"></div>
+	<script>
+		$(function(){
+			$("#footer-ph").load("./footer.html");
+		});
+	</script>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
