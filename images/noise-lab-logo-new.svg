@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B0E0E6;stop-opacity:1" />
+    </linearGradient>
+    <!-- Chicago 6-pointed star -->
+    <symbol id="chicagoStar" viewBox="0 0 20 20">
+      <polygon points="10,0 12,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 8,7" fill="#E31C23"/>
+    </symbol>
+  </defs>
+
+  <!-- Background - Chicago light blue -->
+  <rect width="200" height="200" fill="url(#skyGrad)"/>
+
+  <!-- Chicago Y Municipal symbol - stylized as network -->
+  <g>
+    <!-- Y shape lines -->
+    <path d="M 100 170 L 100 100 L 55 40" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 100 100 L 145 40" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 100 170 L 100 100 L 55 40" fill="none" stroke="#4A90A4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 100 100 L 145 40" fill="none" stroke="#4A90A4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Network nodes on Y vertices -->
+  <circle cx="55" cy="40" r="16" fill="#FFFFFF" stroke="#4A90A4" stroke-width="3"/>
+  <circle cx="145" cy="40" r="16" fill="#FFFFFF" stroke="#4A90A4" stroke-width="3"/>
+  <circle cx="100" cy="170" r="16" fill="#FFFFFF" stroke="#4A90A4" stroke-width="3"/>
+  <circle cx="100" cy="100" r="14" fill="#4A90A4"/>
+
+  <!-- Chicago 4 six-pointed stars - positioned symmetrically -->
+  <use href="#chicagoStar" x="18" y="62" width="16" height="16"/>
+  <use href="#chicagoStar" x="166" y="62" width="16" height="16"/>
+  <use href="#chicagoStar" x="55" y="130" width="16" height="16"/>
+  <use href="#chicagoStar" x="129" y="130" width="16" height="16"/>
+
+  <!-- Small network connection dots for texture -->
+  <circle cx="75" cy="70" r="5" fill="#4A90A4" opacity="0.5"/>
+  <circle cx="125" cy="70" r="5" fill="#4A90A4" opacity="0.5"/>
+  <circle cx="100" cy="135" r="5" fill="#4A90A4" opacity="0.5"/>
+
+  <!-- Subtle connection lines -->
+  <g stroke="#4A90A4" stroke-width="2" opacity="0.3">
+    <line x1="55" y1="40" x2="75" y2="70"/>
+    <line x1="145" y1="40" x2="125" y2="70"/>
+    <line x1="75" y1="70" x2="100" y2="100"/>
+    <line x1="125" y1="70" x2="100" y2="100"/>
+    <line x1="100" y1="100" x2="100" y2="135"/>
+    <line x1="100" y1="135" x2="100" y2="170"/>
+  </g>
+
+</svg>
