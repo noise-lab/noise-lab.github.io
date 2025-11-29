@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Internet Censorship and Online Speech Research">
+  <title>Internet Censorship and Online Speech</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="nav-placeholder"></div>
+  <script>
+    $.get("./navbar.html", function(data){
+      $("#nav-placeholder").replaceWith(data);
+    });
+  </script>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading -->
+    <h2 class="mt-4 mb-3">Internet Censorship and Online Speech</h2>
+
+    <p>
+    Our research group has been studying Internet censorship and online speech for over two decades,
+    developing both measurement techniques to understand how content is filtered worldwide and
+    circumvention tools to help users access information freely. More recently, we have expanded
+    our focus to include content moderation practices on online platforms.
+    </p>
+
+    <!-- Censorship Circumvention -->
+    <h4 class="mt-4 mb-3">Censorship Circumvention</h4>
+    <div class="row">
+      <div class="col-lg-8">
+        <p>
+        We have developed several systems that help users circumvent Internet censorship, beginning
+        with <b>Infranet</b> (2002), one of the first systems designed to enable users to
+        surreptitiously retrieve blocked content via cooperating Web servers distributed across
+        the Internet.
+        </p>
+        <p>
+        <b>Collage</b> (2010) introduced a novel approach that hides messages in user-generated
+        content hosted on sites that censors are unlikely to block, using steganography and
+        deniable communication techniques.
+        </p>
+        <p>
+        <b>Facade</b> (2014) provides high-throughput, deniable censorship circumvention by
+        hiding traffic in Web search queries, making it difficult for censors to distinguish
+        circumvention traffic from normal browsing activity.
+        </p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <img class="img-fluid rounded mb-4" src="images/censorship-logo.png" alt="Censorship Research" style="max-height: 200px;">
+      </div>
+    </div>
+
+    <!-- Censorship Measurement -->
+    <h4 class="mt-4 mb-3">Censorship Measurement</h4>
+    <div class="row">
+      <div class="col-lg-8">
+        <p>
+        Understanding censorship requires measuring it at scale, but measurement itself poses
+        ethical and safety challenges. Our work has advanced both the techniques and ethics
+        of censorship measurement.
+        </p>
+        <p>
+        <b>Encore</b> (2015) enables lightweight, large-scale measurement of Web censorship
+        using cross-origin requests, allowing researchers to detect blocking from many
+        vantage points without requiring software installation.
+        </p>
+        <p>
+        <b>GFWeb</b> (2024) provides comprehensive measurement of China's Great Firewall at scale,
+        revealing the multi-layered filtering apparatus used to control Web access.
+        </p>
+        <p>
+        We have also developed techniques for <b>automated detection and fingerprinting of
+        censorship block pages</b>, enabling researchers to identify censorship across
+        different countries and ISPs.
+        </p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <img class="img-fluid rounded mb-4" src="images/online-speech-logo.png" alt="Online Speech" style="max-height: 200px;">
+      </div>
+    </div>
+
+    <!-- Content Moderation -->
+    <h4 class="mt-4 mb-3">Content Moderation</h4>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+        As online platforms have become central to public discourse, understanding how they
+        moderate content has become increasingly important. Our research examines content
+        moderation policies and their effects on users.
+        </p>
+        <p>
+        We have conducted <b>in-depth studies of online platforms' content moderation policies</b>,
+        analyzing how community guidelines shape online discourse and examining user experiences
+        with content moderation in generative AI products.
+        </p>
+        <p>
+        Our work also addresses <b>disinformation</b>, developing infrastructure-based techniques
+        to identify disinformation websites without analyzing content directly.
+        </p>
+      </div>
+    </div>
+
+    <!-- Selected Publications -->
+    <h4 class="mt-4 mb-3">Selected Publications</h4>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul>
+          <li>
+            <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/hoang">GFWeb: Measuring the Great Firewall's Web Censorship at Scale</a><br />
+            Nguyen Phong Hoang, Jakub Dalek, Masashi Crete-Nishihata, Nicolas Christin, Vinod Yegneswaran, Michalis Polychronakis, Nick Feamster.<br />
+            USENIX Security Symposium. 2024.
+          </li>
+          <p />
+          <li>
+            <a href="https://dl.acm.org/doi/10.1145/3613904.3642382">Community Guidelines Make This the Best Party on the Internet: An In-Depth Study of Online Platforms' Content Moderation Policies</a><br />
+            Brennan Schaffner, Arjun Nitin Bhagoji, Michael Cheng, Jacqueline Mei, Jay Shen, Grace Wang, Genevieve Lakier, Chenhao Tan, Nick Feamster, Marshini Chetty.<br />
+            ACM CHI Conference on Human Factors in Computing Systems. 2024.
+          </li>
+          <p />
+          <li>
+            Understanding Content Moderation Policies and User Experiences in Generative AI Products<br />
+            Lan Gao, Oscar Chen, Rachel Lee, Nick Feamster, Chenhao Tan, Marshini Chetty.<br />
+            USENIX Security Symposium. 2025.
+          </li>
+          <p />
+          <li>
+            <a href="https://www.usenix.org/conference/foci20/presentation/hounsel">Identifying Disinformation Websites Using Infrastructure Features</a><br />
+            Austin Hounsel, Jordan Holland, Ben Kaiser, Kevin Borgolte, Nick Feamster, Jonathan Mayer.<br />
+            USENIX Workshop on Free and Open Communications on the Internet (FOCI). 2020.
+          </li>
+          <p />
+          <li>
+            <a href="https://arxiv.org/abs/1410.1211">Encore: Lightweight Measurement of Web Censorship with Cross-Origin Requests</a><br />
+            Sam Burnett, Nick Feamster.<br />
+            ACM SIGCOMM. 2015.
+          </li>
+          <p />
+          <li>
+            <a href="https://dl.acm.org/doi/10.1145/2815675.2815690">Examining How the Great Firewall Discovers Hidden Circumvention Servers</a><br />
+            Roya Ensafi, David Fifield, Philipp Winter, Nick Feamster, Nick Weaver, Vern Paxson.<br />
+            ACM SIGCOMM Internet Measurement Conference (IMC). 2015.
+          </li>
+          <p />
+          <li>
+            <a href="https://dl.acm.org/doi/10.1145/2663716.2663722">Automated Detection and Fingerprinting of Censorship Block Pages</a><br />
+            Ben Jones, Tzu-Wen Lee, Nick Feamster, Phillipa Gill.<br />
+            ACM SIGCOMM Internet Measurement Conference (IMC). 2014.
+          </li>
+          <p />
+          <li>
+            <a href="https://www.usenix.org/conference/foci14/workshop-program/presentation/jones">Facade: High-Throughput, Deniable Censorship Circumvention Using Web Search</a><br />
+            Ben Jones, Sam Burnett, Nick Feamster, Sean Donovan, Sarthak Grover, Karim Habak.<br />
+            USENIX Workshop on Free and Open Communications on the Internet (FOCI). 2014.
+          </li>
+          <p />
+          <li>
+            <a href="https://dl.acm.org/doi/10.1145/2500098.2500111">Making Sense of Internet Censorship: A New Frontier for Internet Measurement</a><br />
+            Sam Burnett, Nick Feamster.<br />
+            ACM SIGCOMM Computer Communications Review. 2013.
+          </li>
+          <p />
+          <li>
+            Chipping Away at Censorship Firewalls with Collage<br />
+            Sam Burnett, Nick Feamster, Santosh Vempala.<br />
+            USENIX Security Symposium. 2010.
+          </li>
+          <p />
+          <li>
+            Infranet: Circumventing Web Censorship and Surveillance<br />
+            Nick Feamster, Magdalena Balazinska, Greg Harfst, Hari Balakrishnan, David Karger.<br />
+            USENIX Security Symposium. 2002.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <div id="footer-ph"></div>
+  <script>
+    $(function(){
+      $("#footer-ph").load("./footer.html");
+    });
+  </script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
