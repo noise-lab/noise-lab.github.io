@@ -47,17 +47,19 @@
         that identify malicious activity based on network behavior rather than content analysis.
         </p>
         <p>
-        <b>SNARE</b> (Spatio-temporal Network-level Automatic Reputation Engine) was the first
+        <b><a href="https://www.usenix.org/legacy/event/sec09/tech/full_papers/hao.pdf">SNARE</a></b> (Spatio-temporal Network-level Automatic Reputation Engine) was the first
         spam filtering system based on network-level features, using lightweight traffic analysis
-        to identify spam senders without inspecting message content.
+        to identify spam senders without inspecting message content. Our earlier work on
+        <a href="https://dl.acm.org/doi/10.1145/1159913.1159947">understanding the network-level behavior of spammers</a> laid the foundation for this approach.
         </p>
         <p>
-        Our work on <b>DNS-based reputation systems</b> (Notos, Predator) pioneered techniques for
-        detecting malicious domains based on DNS query patterns and registration behavior. This
-        research formed the basis for Damballa, a startup focused on botnet detection.
+        Our work on <b>DNS-based reputation systems</b> pioneered techniques for
+        detecting malicious domains. <a href="https://www.usenix.org/legacy/event/sec10/tech/full_papers/Antonakakis.pdf">Notos</a> (2010) introduced dynamic reputation scoring for DNS,
+        while <b><a href="https://dl.acm.org/doi/abs/10.1145/2976749.2978317">PREDATOR</a></b> (2016) enables proactive recognition and elimination of domain abuse
+        at time-of-registration, catching malicious domains before they can be used.
         </p>
         <p>
-        <b>ASwatch</b> exposes bulletproof hosting providers by analyzing AS-level reputation,
+        <b><a href="https://dl.acm.org/doi/10.1145/2785956.2787494">ASwatch</a></b> exposes bulletproof hosting providers by analyzing AS-level reputation,
         identifying network operators that systematically harbor malicious activity.
         </p>
       </div>
@@ -76,18 +78,19 @@
         understand and mitigate risks.
         </p>
         <p>
-        <b>IoT Inspector</b> enables crowdsourced collection of labeled network traffic from
+        <b><a href="https://dl.acm.org/doi/abs/10.1145/3397333">IoT Inspector</a></b> enables crowdsourced collection of labeled network traffic from
         smart home devices, creating datasets that support security and privacy research at scale.
         </p>
         <p>
-        Our research on <b>smart TV tracking</b> revealed extensive data collection by streaming
+        Our research on <b><a href="https://dl.acm.org/doi/10.1145/3319535.3354198">smart TV tracking</a></b> revealed extensive data collection by streaming
         devices, documenting how over-the-top TV platforms track viewing behavior and share
-        data with advertisers.
+        data with advertisers. Recent work examines <a href="https://www.ndss-symposium.org/ndss-paper/acoustic-keystroke-leakage-on-smart-televisions/">acoustic keystroke leakage</a> on smart TVs.
         </p>
         <p>
-        We have developed <b>traffic shaping techniques</b> to protect smart home privacy from
+        We have developed <b><a href="https://content.sciendo.com/view/journals/popets/2019/3/article-p128.xml">traffic shaping techniques</a></b> to protect smart home privacy from
         network observers, hiding device activity patterns that could reveal sensitive information
-        about occupants' behavior.
+        about occupants' behavior. Our early work showed that <a href="http://datworkshop.org/papers/dat16-final37.pdf">a smart home is no castle</a>,
+        with encrypted IoT traffic revealing private activities.
         </p>
       </div>
       <div class="col-lg-4 text-center">
@@ -104,9 +107,13 @@
         examining whether information flows align with user expectations and social norms.
         </p>
         <p>
-        Our work has uncovered mismatches between privacy regulations (like COPPA) and parents'
-        actual privacy norms for children's IoT toys, and developed crowdsourcing techniques
-        to discover privacy norms for smart home devices.
+        Our work on <a href="https://dl.acm.org/doi/10.1145/3214262">discovering smart home IoT privacy norms</a> uses contextual integrity
+        to understand user expectations, while research on <a href="https://www.usenix.org/conference/usenixsecurity19/presentation/apthorpe">IoT toy privacy</a>
+        uncovered mismatches between privacy regulations (like COPPA) and parents' actual privacy norms.
+        </p>
+        <p>
+        We have developed <a href="https://www.aaai.org/ojs/index.php/HCOMP/article/download/5266/5118">contextual integrity approaches to privacy policy analysis</a>,
+        and studied <a href="https://dl.acm.org/doi/10.1145/3274469">user perceptions of smart home IoT privacy</a>.
         </p>
         <p>
         Recently, we have studied <b>dark patterns in privacy opt-out processes</b>, examining
@@ -125,13 +132,19 @@
         systems to improve DNS privacy while maintaining performance.
         </p>
         <p>
-        <b>Oblivious DNS (ODNS)</b> protects user privacy against powerful adversaries by
+        <b><a href="https://content.sciendo.com/view/journals/popets/2019/2/article-p228.xml">Oblivious DNS (ODNS)</a></b> protects user privacy against powerful adversaries by
         preventing any single party from learning both who is making a query and what domain
-        they are querying.
+        they are querying. This work laid the foundation for the IETF's Oblivious HTTP standard.
         </p>
         <p>
-        Our work on <b>encrypted DNS performance</b> studies whether DNS-over-HTTPS and
-        DNS-over-TLS can provide privacy without sacrificing speed.
+        We have extensively studied the <b>costs and benefits of encrypted DNS</b>, including
+        <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-72582-2_26.pdf">performance analysis of DoH and DoT</a>,
+        <a href="https://dl.acm.org/authorize?N687423">cost-benefit analysis for the modern web</a>, and
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3427563">policy implications of DNS-over-HTTPS</a>.
+        </p>
+        <p>
+        We also study <a href="https://www.ndss-symposium.org/wp-content/uploads/dnspriv21-07-paper.pdf">user expectations and understanding of encrypted DNS settings</a>,
+        examining how users perceive and configure DNS privacy features.
         </p>
       </div>
     </div>
@@ -140,89 +153,148 @@
     <h4 class="mt-4 mb-3">Selected Publications</h4>
     <div class="row">
       <div class="col-lg-12">
+        <p><b>Privacy</b></p>
         <ul>
           <li>
             Dark Patterns in the Opt-Out Process and Compliance with the California Consumer Privacy Act (CCPA)<br />
             Van Hong Tran, Aarushi Mehrotra, Ranya Sharma, Marshini Chetty, Nick Feamster, Jens Frankenreiter, Lior Strahilevitz.<br />
-            ACM CHI Conference on Human Factors in Computing Systems. 2025.
+            <em>ACM CHI Conference on Human Factors in Computing Systems.</em> 2025.
           </li>
           <p />
           <li>
             Understanding User Privacy Concerns of Shared Smart TVs<br />
             Synthia Wang, Nick Feamster, Marshini Chetty.<br />
-            ACM Conference on Computer-Supported Cooperative Work (CSCW). 2025.
-          </li>
-          <p />
-          <li>
-            <a href="https://ieeexplore.ieee.org/document/10628044">Can Allowlists Capture the Variability of Home IoT Device Network Behavior?</a><br />
-            Weijia He, Kevin Bryson, Ricardo Calderon, Vijay Prakash, Nick Feamster, Danny Yuxing Huang, Blase Ur.<br />
-            IEEE European Symposium on Security and Privacy (EuroS&P). 2024.
-          </li>
-          <p />
-          <li>
-            <a href="https://www.ndss-symposium.org/ndss-paper/acoustic-keystroke-leakage-on-smart-televisions/">Acoustic Keystroke Leakage on Smart Televisions</a><br />
-            Tejas Kannan, Synthia Qia Wang, Max Sunog, Abraham Bueno de Mesquita, Nick Feamster, Henry Hoffmann.<br />
-            Network and Distributed System Security Symposium (NDSS). 2024.
-          </li>
-          <p />
-          <li>
-            <a href="https://dl.acm.org/doi/abs/10.1145/3397333">IoT Inspector: Crowdsourcing Labeled Network Traffic from Smart Home Devices at Scale</a><br />
-            Danny Yuxing Huang, Noah Apthorpe, Frank Li, Gunes Acar, Nick Feamster.<br />
-            Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT/UbiComp). 2020.
-          </li>
-          <p />
-          <li>
-            <a href="https://dl.acm.org/doi/10.1145/3319535.3354198">Watching You Watch: The Tracking Ecosystem of Over-the-Top TV Streaming Devices</a><br />
-            Hooman Moghaddam, Gunes Acar, Arunesh Mathur, Danny Huang, Ben Burgess, Prateek Mittal, Nick Feamster, Arvind Narayanan, Ed Felten.<br />
-            ACM Conference on Computer and Communications Security (CCS). 2019.
+            <em>ACM Conference on Computer-Supported Cooperative Work (CSCW).</em> 2025.
           </li>
           <p />
           <li>
             <a href="https://www.usenix.org/conference/usenixsecurity19/presentation/apthorpe">Evaluating the Contextual Integrity of Privacy Regulation: Parents' IoT Toy Privacy Norms Versus COPPA</a><br />
             Noah Apthorpe, Sarah Varghese, Nick Feamster.<br />
-            USENIX Security Symposium. 2019.
+            <em>USENIX Security Symposium.</em> 2019.
           </li>
           <p />
           <li>
             <a href="https://www.aaai.org/ojs/index.php/HCOMP/article/download/5266/5118">Going Against the (Appropriate) Flow: A Contextual Integrity Approach to Privacy Policy Analysis</a><br />
             Noah Apthorpe, Yan Shvartzshnaider, Nick Feamster, Helen Nissenbaum.<br />
-            AAAI Conference on Human Computation and Crowdsourcing (HCOMP). 2019.
-          </li>
-          <p />
-          <li>
-            <a href="https://content.sciendo.com/view/journals/popets/2019/3/article-p128.xml">Keeping the Smart Home Private with Smart(er) Traffic Shaping</a><br />
-            Noah Apthorpe, Danny Yuxing Huang, Dillon Reisman, Arvind Narayanan, Nick Feamster.<br />
-            Symposium on Privacy Enhancing Technologies (PETS). 2019.
+            <em>AAAI Conference on Human Computation and Crowdsourcing (HCOMP).</em> 2019.
           </li>
           <p />
           <li>
             <a href="https://dl.acm.org/doi/10.1145/3214262">Discovering Smart Home IoT Privacy Norms using Contextual Integrity</a><br />
             Noah Apthorpe, Yan Shvartzshnaider, Dillon Reisman, Nick Feamster.<br />
-            Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT). 2018.
+            <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT).</em> 2018.
+          </li>
+          <p />
+          <li>
+            <a href="https://dl.acm.org/doi/10.1145/3274469">User Perceptions of Smart Home IoT Privacy</a><br />
+            Serena Zheng, Noah Apthorpe, Marshini Chetty, Nick Feamster.<br />
+            <em>ACM Conference on Computer Supported Cooperative Work (CSCW).</em> 2018.
+          </li>
+          <p />
+          <li>
+            <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-72582-2_26.pdf">Can Encrypted DNS Be Fast?</a><br />
+            Austin Hounsel, Paul Schmitt, Kevin Borgolte, Nick Feamster.<br />
+            <em>Passive and Active Measurement Conference (PAM).</em> 2021.
+          </li>
+          <p />
+          <li>
+            <a href="https://www.ndss-symposium.org/wp-content/uploads/dnspriv21-07-paper.pdf">User Expectations and Understanding of Encrypted DNS Settings</a><br />
+            Alexandra Nisenoff, Nick Feamster, Madeleine Hoofnagle, Sydney Zink.<br />
+            <em>NDSS Workshop on DNS Privacy.</em> 2021.
+          </li>
+          <p />
+          <li>
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3427563">How DNS over HTTPS is Reshaping Privacy, Performance, and Policy in the Internet Ecosystem</a><br />
+            Tithi Chattopadhyay, Paul Schmitt, Kevin Borgolte, Jordan Holland, Austin Hounsel, Nick Feamster.<br />
+            <em>Research Conference on Communications, Information and Internet Policy (TPRC).</em> 2019.
+          </li>
+          <p />
+          <li>
+            <a href="https://content.sciendo.com/view/journals/popets/2019/2/article-p228.xml">Oblivious DNS: Practical Privacy for DNS Queries</a><br />
+            Paul Schmitt, Anne Edmundson, Nick Feamster.<br />
+            <em>Symposium on Privacy Enhancing Technologies (PETS).</em> 2019.
+          </li>
+          <p />
+          <li>
+            <a href="https://dl.acm.org/authorize?N687423">Analyzing the Costs (and Benefits) of DNS, DoT, and DoH for the Modern Web</a><br />
+            Austin Hounsel, Kevin Borgolte, Paul Schmitt, Jordan Holland, Nick Feamster.<br />
+            <em>IRTF Applied Networking Research Workshop (ANRW).</em> 2019.
+          </li>
+        </ul>
+        <p><b>IoT Security</b></p>
+        <ul>
+          <li>
+            <a href="https://ieeexplore.ieee.org/document/10628044">Can Allowlists Capture the Variability of Home IoT Device Network Behavior?</a><br />
+            Weijia He, Kevin Bryson, Ricardo Calderon, Vijay Prakash, Nick Feamster, Danny Yuxing Huang, Blase Ur.<br />
+            <em>IEEE European Symposium on Security and Privacy (EuroS&P).</em> 2024.
+          </li>
+          <p />
+          <li>
+            <a href="https://www.ndss-symposium.org/ndss-paper/acoustic-keystroke-leakage-on-smart-televisions/">Acoustic Keystroke Leakage on Smart Televisions</a><br />
+            Tejas Kannan, Synthia Qia Wang, Max Sunog, Abraham Bueno de Mesquita, Nick Feamster, Henry Hoffmann.<br />
+            <em>Network and Distributed System Security Symposium (NDSS).</em> 2024.
+          </li>
+          <p />
+          <li>
+            <a href="https://dl.acm.org/doi/abs/10.1145/3397333">IoT Inspector: Crowdsourcing Labeled Network Traffic from Smart Home Devices at Scale</a><br />
+            Danny Yuxing Huang, Noah Apthorpe, Frank Li, Gunes Acar, Nick Feamster.<br />
+            <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT/UbiComp).</em> 2020.
+          </li>
+          <p />
+          <li>
+            <a href="https://dl.acm.org/doi/10.1145/3319535.3354198">Watching You Watch: The Tracking Ecosystem of Over-the-Top TV Streaming Devices</a><br />
+            Hooman Moghaddam, Gunes Acar, Arunesh Mathur, Danny Huang, Ben Burgess, Prateek Mittal, Nick Feamster, Arvind Narayanan, Ed Felten.<br />
+            <em>ACM Conference on Computer and Communications Security (CCS).</em> 2019.
+          </li>
+          <p />
+          <li>
+            <a href="https://content.sciendo.com/view/journals/popets/2019/3/article-p128.xml">Keeping the Smart Home Private with Smart(er) Traffic Shaping</a><br />
+            Noah Apthorpe, Danny Yuxing Huang, Dillon Reisman, Arvind Narayanan, Nick Feamster.<br />
+            <em>Symposium on Privacy Enhancing Technologies (PETS).</em> 2019.
+          </li>
+          <p />
+          <li>
+            <a href="https://ieeexplore.ieee.org/abstract/document/8443103">Security and Privacy Analyses of Internet of Things Children's Toys</a><br />
+            Gordon Chu, Noah Apthorpe, Nick Feamster.<br />
+            <em>IEEE Internet of Things Journal.</em> 2018.
+          </li>
+          <p />
+          <li>
+            <a href="http://datworkshop.org/papers/dat16-final37.pdf">A Smart Home is No Castle: Privacy Vulnerabilities of Encrypted IoT Traffic</a><br />
+            Noah Apthorpe, Dillon Reisman, Nick Feamster.<br />
+            <em>Workshop on Data and Algorithmic Transparency (DAT).</em> 2016.
+          </li>
+        </ul>
+        <p><b>Spam and Abuse Detection</b></p>
+        <ul>
+          <li>
+            <a href="https://dl.acm.org/doi/abs/10.1145/2976749.2978317">PREDATOR: Proactive Recognition and Elimination of Domain Abuse at Time-Of-Registration</a><br />
+            Shuang Hao, Alex Kantchelian, Brad Miller, Vern Paxson, Nick Feamster.<br />
+            <em>ACM Conference on Computer and Communications Security (CCS).</em> 2016.
           </li>
           <p />
           <li>
             <a href="https://dl.acm.org/doi/10.1145/2785956.2787494">ASwatch: An AS Reputation System to Expose Bulletproof Hosting ASes</a><br />
             Maria Konte, Roberto Perdisci, Nick Feamster.<br />
-            ACM SIGCOMM. 2015.
+            <em>ACM SIGCOMM.</em> 2015.
           </li>
           <p />
           <li>
-            Building a Dynamic Reputation System for DNS<br />
+            <a href="https://www.usenix.org/legacy/event/sec10/tech/full_papers/Antonakakis.pdf">Building a Dynamic Reputation System for DNS (Notos)</a><br />
             Manos Antonakakis, Roberto Perdisci, David Dagon, Wenke Lee, Nick Feamster.<br />
-            USENIX Security Symposium. 2010.
+            <em>USENIX Security Symposium.</em> 2010.
           </li>
           <p />
           <li>
-            Detecting Spammers with SNARE: Spatio-temporal Network-level Automatic Reputation Engine<br />
+            <a href="https://www.usenix.org/legacy/event/sec09/tech/full_papers/hao.pdf">Detecting Spammers with SNARE: Spatio-temporal Network-level Automatic Reputation Engine</a><br />
             Shuang Hao, Nadeem Ahmed Syed, Nick Feamster, Alexander G. Gray, Sven Krasser.<br />
-            USENIX Security Symposium. 2009.
+            <em>USENIX Security Symposium.</em> 2009.
           </li>
           <p />
           <li>
             <a href="https://dl.acm.org/doi/10.1145/1159913.1159947">Understanding the Network-Level Behavior of Spammers</a><br />
-            Nick Feamster, Anirudh Ramachandran, David Dagon.<br />
-            ACM SIGCOMM. 2006.
+            Anirudh Ramachandran, Nick Feamster.<br />
+            <em>ACM SIGCOMM.</em> 2006.
           </li>
         </ul>
       </div>
